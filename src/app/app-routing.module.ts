@@ -9,7 +9,6 @@ import { ListMongoDBComponent } from './list-mongo-db/list-mongo-db.component';
 import { FahrenheitComponent } from './fahrenheit/fahrenheit.component';
 import { CelciusComponent } from './celcius/celcius.component';
 import { WeatherComponent } from './weather/weather.component';
-import { WeatherStatusComponent } from './weather-status/weather-status.component';
 
 
 
@@ -23,7 +22,6 @@ const routes: Routes = [
   {path: 'Fahrenheit', component: FahrenheitComponent},
   {path: 'Celcius', component: CelciusComponent},
   {path: 'Weather', component: WeatherComponent},
-  {path: 'WeatherStatus', component: WeatherStatusComponent},
 
   
 ];

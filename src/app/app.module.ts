@@ -23,7 +23,7 @@ import { CelciusComponent } from './celcius/celcius.component';
 import { FahrenheitComponent } from './fahrenheit/fahrenheit.component';
 import { WeatherComponent } from './weather/weather.component';
 import { MatSelectModule } from '@angular/material/select';
-import { WeatherStatusComponent } from './weather-status/weather-status.component';
+
 
 
 
@@ -44,7 +44,6 @@ import { WeatherStatusComponent } from './weather-status/weather-status.componen
     CelciusComponent,
     FahrenheitComponent,
     WeatherComponent,
-    WeatherStatusComponent,
   ],
   imports: [
     BrowserModule,
