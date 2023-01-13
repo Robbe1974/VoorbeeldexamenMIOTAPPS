@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div class="parent">
+      <div id="div1" class="div1">
+        <img
+          width="165px"
+          height="auto"
+          *ngIf="ShowLockClosed"
+          src="/assets/img/closedLock.png"
+        />
+        <img
+          width="165px"
+          height="auto"
+          *ngIf="ShowLockOpen"
+          src="/assets/img/openLock.png"
+        />
+      </div>
+
+      <div id="div2" class="div2">
+        <h1>Vives-smart-lock</h1>
+        <p>{{Status}}</p>
+      </div>
+      <div class="div3">
+        <button mat-raised-button (click)="NukiUnLock()">
+          <mat-icon>lock_open</mat-icon>
+          Ontgrendelen
+        </button>
+        <button mat-raised-button (click)="NukiLock()">
+          <mat-icon>lock</mat-icon>
+          Vergrendelen
+        </button>
+        <button mat-raised-button (click)="GetStatus()">
+          <mat-icon>update</mat-icon>
+          Update Status
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

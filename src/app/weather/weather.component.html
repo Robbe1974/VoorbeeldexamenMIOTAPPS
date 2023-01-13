@@ -1,0 +1,19 @@
+<div class="container">
+    <h1>Weather App</h1>
+    <mat-form-field>
+      <mat-label>Select City</mat-label>
+      <mat-select [(ngModel)]="city">
+        <mat-option value="Kortrijk">Kortrijk</mat-option>
+        <mat-option value="Brugge">Brugge</mat-option>
+        <mat-option value="Roeselare">Roeselare</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <button mat-raised-button (click)="getWeather()">Get Weather</button>
+    <div class="weather-card" *ngIf="weather">
+        <h2>{{ weather.name }}</h2>
+        <p>Temperature: {{ weather.main.temp }}°C</p>
+        <p>Humidity: {{ weather.main.humidity }}%</p>
+        <p>Weather: {{ weather.weather[0].description }}</p>
+    </div>
+  </div>
+  

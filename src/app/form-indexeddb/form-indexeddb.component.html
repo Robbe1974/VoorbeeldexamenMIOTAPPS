@@ -1,0 +1,33 @@
+<div class="divSettings">
+  <h2>Nuki Instellingen</h2>
+
+  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+    <div class="form-group">
+      <label for="NukiID">Nuki User ID</label><br />
+      <input
+        type="text"
+        class="form-control"
+        id="NukiID"
+        required
+        [(ngModel)]="model.NukiID"
+        name="NukiID"
+        #ip="ngModel"
+      />
+      <br />
+      <label for="bearer">Bearer token:</label><br />
+      <input
+        type="text"
+        class="form-control"
+        id="bearer"
+        required
+        [(ngModel)]="model2.bearer"
+        name="bearer"
+        #bearer="ngModel"
+      />
+    </div>
+    <br />
+    <button mat-raised-button type="submit" class="btn btn-primary">
+      Save
+    </button>
+  </form>
+</div>

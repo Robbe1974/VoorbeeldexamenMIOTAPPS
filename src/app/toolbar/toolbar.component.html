@@ -1,0 +1,24 @@
+<mat-toolbar color="white">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+      </button>
+      <h1>Nuki-App</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/Home'"> Home </a>
+        <a mat-button [routerLink]="'/Lock'"> Bedien slot </a>
+        <a mat-button [routerLink]="'/Form'"> Instellingen </a>
+        <a mat-button [routerLink]="'/Log'"> Log </a>
+        <a mat-button [routerLink]="'/Calculate'"> Calculate </a>
+        <a mat-button [routerLink]="'/ListMongoDB'"> MongoDB </a>
+        <a mat-button [routerLink]="'/Fahrenheit'">Fahrenheit</a>
+        <a mat-button [routerLink]="'/Celcius'">Celsius</a>
+        <a mat-button [routerLink]="'/Weather'">Weather</a>
+        <a mat-button [routerLink]="'/WeatherStatus'">Weatherstatus</a>
+
+      </div>
+    </mat-toolbar-row>
+  
+   
+  
+<ng-content></ng-content>

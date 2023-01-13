@@ -1,0 +1,4 @@
+<mat-form-field>
+    <input matInput type="number" [(ngModel)]="temperatureService.celsius" (ngModelChange)="temperatureService.fahrenheit=temperatureService.convertToFahrenheit()" placeholder="Enter temperature in Celsius">
+    <mat-label>Celsius</mat-label>
+  </mat-form-field>

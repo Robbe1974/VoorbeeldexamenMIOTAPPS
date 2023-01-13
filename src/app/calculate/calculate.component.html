@@ -1,0 +1,30 @@
+
+<mat-card>
+    <mat-card-title>Wiskunde</mat-card-title>
+    <form>
+        <mat-form-field>
+          <mat-label>Number 1</mat-label>
+          <input matInput type="text" pattern="[0-9]*" [(ngModel)]="number1" name="number1">
+        </mat-form-field>
+        
+        <mat-form-field>
+            <mat-label>Operation</mat-label>
+            <input matInput type="text" [(ngModel)]="operation" name="operation"
+            [pattern]="'+|-|x|/'">
+            <p>+ - x /</p>
+          </mat-form-field>
+
+        <mat-form-field>
+          <mat-label>Number 2</mat-label>
+          <input matInput type="text" pattern="[0-9]*" [(ngModel)]="number2" name="number2">
+        </mat-form-field>
+      
+        <button mat-raised-button color="primary" (click)="calculate()">Perform Calculation</button>
+      </form>
+      
+      <div *ngIf="result">
+        <p>Result: {{result}}</p>
+      </div>
+      
+
+</mat-card>
